@@ -3,11 +3,12 @@ import {
   BreadcrumbItem,
   BreadcrumbLink,
   BreadcrumbList,
+  BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb"
 import { Separator } from "@/components/ui/separator"
 import { SidebarTrigger } from "@/components/ui/sidebar"
 
-export default function OverviewPage() {
+export default function SettingsPage() {
   return (
     <>
       <header className="flex h-16 shrink-0 items-center gap-2 transition-[width,height] ease-linear group-has-data-[collapsible=icon]/sidebar-wrapper:h-12">
@@ -20,10 +21,11 @@ export default function OverviewPage() {
           <Breadcrumb>
             <BreadcrumbList>
               <BreadcrumbItem className="hidden md:block">
-                <BreadcrumbLink href="/Overview">
-                  Overview
+                <BreadcrumbLink href="/Settings">
+                  Settings
                 </BreadcrumbLink>
               </BreadcrumbItem>
+              <BreadcrumbSeparator className="hidden md:block" />
             </BreadcrumbList>
           </Breadcrumb>
         </div>
