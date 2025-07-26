@@ -30,7 +30,7 @@ const data = {
     items: [
       {
         title: "Overview",
-        url: "Overview",
+        url: "/Overview",
         icon: Home,
       }
     ],
@@ -40,12 +40,12 @@ const data = {
     items: [
       {
         title: "Budget Sheets",
-        url: "BudgetSheets",
+        url: "/BudgetSheets",
         icon: BookCheck,
       },
       {
         title: "Goals",
-        url: "Goals",
+        url: "/Goals",
         icon: Map,
       },
     ],
@@ -55,12 +55,12 @@ const data = {
     items: [
       {
         title: "Settings",
-        url: "Settings",
+        url: "/Settings",
         icon: Settings,
       },
       {
         title: "Currency Converter",
-        url: "Convert",
+        url: "/Convert",
         icon: ChartCandlestick,
       },
     ],
