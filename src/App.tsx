@@ -12,8 +12,8 @@ import './App.css'
 
 function App() {
   return (
-    <BrowserRouter basename="/personal-budgeting-web-app">
-      <Routes>
+    <BrowserRouter>
+      < Routes >
         <Route path="/" element={<Layout />}>
           <Route index element={<Navigate to="/Overview" replace />} />
           <Route path="Overview" element={<OverviewPage />} />
@@ -24,8 +24,8 @@ function App() {
           <Route path="Settings" element={<SettingsPage />} />
           <Route path="Convert" element={<CurrencyConverterPage />} />
         </Route>
-      </Routes>
-    </BrowserRouter>
+      </Routes >
+    </BrowserRouter >
   )
 }
 
