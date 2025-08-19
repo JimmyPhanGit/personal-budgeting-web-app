@@ -30,7 +30,7 @@ const data = {
     items: [
       {
         title: "Overview",
-        url: "/Overview",
+        url: "Overview",
         icon: Home,
       }
     ],
@@ -40,7 +40,7 @@ const data = {
     items: [
       {
         title: "Budget Sheets",
-        url: "/BudgetSheets",
+        url: "BudgetSheets",
         icon: BookCheck,
       },
       {
@@ -50,21 +50,21 @@ const data = {
       },
     ],
   },
-    navSettings: {
+  navSettings: {
     label: "Additional Resources",
     items: [
       {
         title: "Settings",
-        url: "/Settings",
+        url: "Settings",
         icon: Settings,
       },
       {
         title: "Currency Converter",
-        url: "/Convert",
+        url: "Convert",
         icon: ChartCandlestick,
       },
     ],
-    
+
   },
 }
 
@@ -72,15 +72,15 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar collapsible="icon" {...props}>
       <SidebarHeader>
-            <SidebarMenuButton
-              size="lg"
-              className="data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground"
-            >
-              <div className="bg-sidebar-primary text-sidebar-primary-foreground flex aspect-square size-8 items-center justify-center rounded-lg">
-                <PiggyBank className="w-5 h-5" />
-              </div>
-              <span className="font-bold text-lg ml-2">Personal Budgeting</span>
-            </SidebarMenuButton>
+        <SidebarMenuButton
+          size="lg"
+          className="data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground"
+        >
+          <div className="bg-sidebar-primary text-sidebar-primary-foreground flex aspect-square size-8 items-center justify-center rounded-lg">
+            <PiggyBank className="w-5 h-5" />
+          </div>
+          <span className="font-bold text-lg ml-2">Personal Budgeting</span>
+        </SidebarMenuButton>
       </SidebarHeader>
       <SidebarContent>
         <NavMain label={data.navOverview.label} items={data.navOverview.items} />
