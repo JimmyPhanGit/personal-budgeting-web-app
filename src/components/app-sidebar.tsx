@@ -7,7 +7,7 @@ import {
   Settings,
   ChartCandlestick
 } from "lucide-react"
-
+import SpendlyLogo from "/SpendlyLogo.png"
 import { NavMain } from "@/components/nav-main"
 import { NavUser } from "@/components/nav-user"
 import {
@@ -76,10 +76,10 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
           size="lg"
           className="data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground"
         >
-          <div className="bg-sidebar-primary text-sidebar-primary-foreground flex aspect-square size-8 items-center justify-center rounded-lg">
-            <PiggyBank className="w-5 h-5" />
+          <div className="flex aspect-square size-8 items-center justify-center rounded-lg bg-gray text-sidebar-primary-foreground">
+            <img src={SpendlyLogo} alt="Spendly Logo" className="w-5 h-5" />
           </div>
-          <span className="font-bold text-lg ml-2">Personal Budgeting</span>
+          <span className="font-bold text-lg ml-2">Spendly</span>
         </SidebarMenuButton>
       </SidebarHeader>
       <SidebarContent>

@@ -29,7 +29,7 @@ export default function OverviewPage() {
         </div>
       </header>
       <div className="flex flex-1 flex-col gap-4 p-4 pt-0">
-        Welcome to your Personal Budgeting Web App!
+        Welcome to Spendly, where you can track your spend, easily.
       </div>
     </>
   )
