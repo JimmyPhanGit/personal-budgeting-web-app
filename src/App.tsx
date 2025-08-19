@@ -12,7 +12,7 @@ import './App.css'
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/personal-budgeting-web-app">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Navigate to="/Overview" replace />} />
