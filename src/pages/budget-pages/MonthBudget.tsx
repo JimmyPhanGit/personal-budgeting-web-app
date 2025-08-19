@@ -250,15 +250,6 @@ function AddTransactionDialog({ onAdd }: { onAdd: (transaction: Transaction) => 
     { key: "Other", label: "Other", Icon: CircleFadingPlus },
   ]
 
-  const formatDate = (dateStr: string) => {
-    const date = new Date(dateStr)
-    return date.toLocaleDateString(undefined, {
-      weekday: "long",
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-    })
-  }
 
   const handleSubmit = () => {
     const amountNum = parseFloat(amount)
