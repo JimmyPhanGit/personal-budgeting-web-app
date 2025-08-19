@@ -45,7 +45,7 @@ const data = {
       },
       {
         title: "Goals",
-        url: "/Goals",
+        url: "Goals",
         icon: Map,
       },
     ],
