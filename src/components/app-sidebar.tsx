@@ -3,7 +3,6 @@ import {
   BookCheck,
   Home,
   Map,
-  PiggyBank,
   Settings,
   ChartCandlestick
 } from "lucide-react"
@@ -76,7 +75,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
           size="lg"
           className="data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground"
         >
-          <div className="flex aspect-square size-8 items-center justify-center rounded-lg bg-gray text-sidebar-primary-foreground">
+          <div className="flex aspect-square size-8 items-center justify-center rounded-lg bg- text-sidebar-primary-foreground">
             <img src={SpendlyLogo} alt="Spendly Logo" className="w-5 h-5" />
           </div>
           <span className="font-bold text-lg ml-2">Spendly</span>
