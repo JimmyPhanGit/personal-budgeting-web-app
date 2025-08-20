@@ -46,6 +46,7 @@ import { SidebarTrigger } from "@/components/ui/sidebar"
 import clsx from "clsx"
 import { PieChart, Pie, Cell, Legend, ResponsiveContainer } from "recharts"
 import { CustomDatePicker } from "@/components/datepicker.tsx"
+import { Toaster, toast } from "sonner"
 
 
 const months = [
@@ -254,7 +255,6 @@ function AddTransactionDialog({ onAdd }: { onAdd: (transaction: Transaction) => 
   const handleSubmit = () => {
     const amountNum = parseFloat(amount)
     let finalCategory = category === "other" ? customCategory.trim() : category
-
     if (!finalCategory || !description || !date || isNaN(amountNum)) {
       alert("Please fill out all fields correctly.")
       return
@@ -274,6 +274,8 @@ function AddTransactionDialog({ onAdd }: { onAdd: (transaction: Transaction) => 
       amount: amountNum,
       id: Date.now(),
     })
+
+    toast.success("Transaction submitted successfully!")
 
     // Reset form
     setCategory("")

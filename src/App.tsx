@@ -7,6 +7,7 @@ import SettingsPage from "./pages/Settings"
 import CurrencyConverterPage from "./pages/CurrencyConverter"
 import Month from "./pages/budget-pages/Month"
 import MonthBudget from "./pages/budget-pages/MonthBudget"
+import { Toaster } from "sonner"
 
 import './App.css'
 
